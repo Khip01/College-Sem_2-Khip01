@@ -1,12 +1,8 @@
-import java.util.Scanner;
-
 /**
  * praktikum_pemilihan
  */
 public class praktikum_fungsi {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-    
         // declare
         int[][] recordsDetail = {
             {10, 5 , 15, 7 }, // RoyalGarden 1
