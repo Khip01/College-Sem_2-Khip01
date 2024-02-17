@@ -8,7 +8,7 @@ public class praktikum_pemilihan {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         
-        // declare
+        // declare, init
         boolean isValid;
         double bobotNTugas = 0.2, bobotNKuis = 0.2, bobotNUTS = 0.3, bobotNUAS = 0.3, nilaiAkhir;
         int nilaiTugas, nilaiKuis, nilaiUTS, nilaiUAS;
@@ -35,7 +35,7 @@ public class praktikum_pemilihan {
         } else {
             // proses menghitung nilai akhir
             nilaiAkhir = (nilaiTugas * bobotNTugas) + (nilaiKuis * bobotNKuis) + (nilaiUTS * bobotNUTS) + (nilaiUAS * bobotNUAS);
-            // konversi nilai akhir -> nilai huruf 
+            // konversi nilai akhir -> nilai huruf (ternary operator)
             nilaiHuruf =  (nilaiAkhir > 80 && nilaiAkhir <= 100) ? "A" 
                         : (nilaiAkhir > 73) ? "B+" 
                         : (nilaiAkhir > 65) ? "B" 
