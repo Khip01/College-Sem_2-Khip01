@@ -31,22 +31,16 @@ public class praktikum_array {
         System.out.println("\nPROGRAM MENGHITUNG IP SEMESTER\n");
 
         // input user
-        System.out.print("masukkan nilai Angka untuk MK Pancasila: ");
-        nilaiAngkas[0] = input.nextDouble();
-        System.out.print("masukkan nilai Angka untuk MK Konsep Teknologi Informasi: ");
-        nilaiAngkas[1] = input.nextDouble();
-        System.out.print("masukkan nilai Angka untuk MK Critical Thinking dan Problem Solving: ");
-        nilaiAngkas[2] = input.nextDouble();
-        System.out.print("masukkan nilai Angka untuk MK Matematika Dasar: ");
-        nilaiAngkas[3] = input.nextDouble();
-        System.out.print("masukkan nilai Angka untuk MK Bahasa Inggris: ");
-        nilaiAngkas[4] = input.nextDouble();
-        System.out.print("masukkan nilai Angka untuk MK Dasar Pemrograman: ");
-        nilaiAngkas[5] = input.nextDouble();
-        System.out.print("masukkan nilai Angka untuk MK Praktikum Dasar Pemrograman: ");
-        nilaiAngkas[6] = input.nextDouble();
-        System.out.print("masukkan nilai Angka untuk MK Keselamatan dan Kesehatan Kerja: ");
-        nilaiAngkas[7] = input.nextDouble();
+        for (int index = 0; index < matkulNsks.length; index++) {
+            System.out.printf("masukkan nilai Angka untuk MK %s: ", matkulNsks[index][0]);
+            nilaiAngkas[index] = input.nextDouble();
+
+            // validation
+            while ( nilaiAngkas[index] < 0 || 100 < nilaiAngkas[index]){
+                System.out.printf("\n[nilai tidak valid]\nmasukkan nilai Angka untuk MK %s: ", matkulNsks[index][0]);
+                nilaiAngkas[index] = input.nextDouble();
+            };
+        }
 
         // inserting into the array "Score Conversion Result"
         for (int row = 0; row < scoreConvRes.length; row++) {
