@@ -25,20 +25,18 @@ public class praktikum_fungsi {
         System.out.println("\nCATATAN STOCK");
         spacer(50);
         System.out.println("\t\tAglonema  Keladi  Alocasia  Mawar");
-        System.out.printf("RoyalGarden1\t%d\t  %d\t  %d\t    %d\n",records[0][0], records[0][1], records[0][2], records[0][3]);
-        System.out.printf("RoyalGarden2\t%d\t  %d\t  %d\t    %d\n",records[1][0], records[1][1], records[1][2], records[1][3]);
-        System.out.printf("RoyalGarden3\t%d\t  %d\t  %d\t    %d\n",records[2][0], records[2][1], records[2][2], records[2][3]);
-        System.out.printf("RoyalGarden4\t%d\t  %d\t  %d\t    %d\n",records[3][0], records[3][1], records[3][2], records[3][3]);
+        for (int n = 0; n < records.length; n++ ) {
+            System.out.printf("RoyalGarden%d\t%d\t  %d\t  %d\t    %d\n", n+1, records[n][0], records[n][1], records[n][2], records[n][3]);
+        }
         spacer(50);
     }
 
     private static void showIncome(int[][] records) {
         System.out.println("\n\nPENDAPATAN SETIAP CABANG");
         spacer(25);
-        System.out.println("RoyalGarden1 = Rp."+calcIncome(records[0][0], records[0][1], records[0][2], records[0][3]));
-        System.out.println("RoyalGarden2 = Rp."+calcIncome(records[1][0], records[1][1], records[1][2], records[1][3]));
-        System.out.println("RoyalGarden3 = Rp."+calcIncome(records[2][0], records[2][1], records[2][2], records[2][3]));
-        System.out.println("RoyalGarden4 = Rp."+calcIncome(records[3][0], records[3][1], records[3][2], records[3][3]));
+        for (int n = 0; n < records.length; n++) {
+            System.out.printf("RoyalGarden%d = Rp.%d\n", n+1, calcIncome(records[n][0], records[n][1], records[n][2], records[n][3]));
+        }
         spacer(25);
     }
 
