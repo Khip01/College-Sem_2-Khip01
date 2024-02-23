@@ -21,7 +21,7 @@ public class Buku02 {
         System.out.println("Sisa Stock: "+stok);
         System.out.println("Harga: Rp."+harga);
 
-        System.out.printf("\nHarga Total: %d\nHarga Diskon: %d\nHarga bayar: %d\n", hargaTotal, hargaDiskon, hargaBayar);
+        System.out.printf("\nHarga Total: %d\nHarga Diskon: %d\nHarga bayar: %d\n\n\n", hargaTotal, hargaDiskon, hargaBayar);
     }
 
     void terjual(int jml) {
