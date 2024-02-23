@@ -1,21 +1,27 @@
 public class BukuMain02 {
 
     public static void main(String[] args) {
-        Buku02 bk1 = new Buku02();
-        bk1.judul = "Today Ends Tomorow Comes";
-        bk1.pengarang = "Denanda Pratiwi";
-        bk1.halaman = 198;
-        bk1.stok = 13;
-        bk1.harga = 71000;
+        // Buku02 bk1 = new Buku02();
+        // bk1.judul = "Today Ends Tomorow Comes";
+        // bk1.pengarang = "Denanda Pratiwi";
+        // bk1.halaman = 198;
+        // bk1.stok = 13;
+        // bk1.harga = 71000;
 
-        bk1.tampilInformasi();
-        bk1.terjual(5);
-        bk1.gantiHarga(60000);
-        bk1.tampilInformasi();
+        // bk1.tampilInformasi();
+        // bk1.terjual(5);
+        // bk1.gantiHarga(60000);
+        // bk1.tampilInformasi();
 
-        Buku02 bk2 = new Buku02("Self Reward", "Maheera Ayesha", 160, 29, 5900);
-        bk2.terjual(11);
-        bk2.tampilInformasi();
+        // Buku02 bk2 = new Buku02(
+        //     "Self Reward", 
+        //     "Maheera Ayesha", 
+        //     160, 
+        //     29, 
+        //     5900
+        // );
+        // bk2.terjual(11);
+        // bk2.tampilInformasi();
 
         Buku02 buku02 = new Buku02(
             "Beginning Flutter 3.0 with Dart", 
@@ -24,7 +30,24 @@ public class BukuMain02 {
             100, 
             160000
         );
+        buku02.terjual(2);
+        
+        buku02.hargaTotal = buku02.hitungHargaTotal();
+        buku02.hargaDiskon = buku02.hitungDiskon();
+        buku02.hargaBayar = buku02.hitungHargaBayar();
+        
         buku02.tampilInformasi();
+        
+
+        buku02.terjual(4);
+
+        
+        buku02.hargaTotal = buku02.hitungHargaTotal();
+        buku02.hargaDiskon = buku02.hitungDiskon();
+        buku02.hargaBayar = buku02.hitungHargaBayar();
+        
+        buku02.tampilInformasi();
+
     }
 
 }
