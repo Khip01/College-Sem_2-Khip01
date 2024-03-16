@@ -27,6 +27,16 @@ public class MainFaktorial {
         for (int i = 0; i < iJml; i++) {
             System.out.println("Hasil pnghitungan faktorial menggunakan Divide dan Conquer adalah " + fk[i].faktorialDC(fk[i].nilai));
         }
+
+        // Menampilkan menggunakan While Loop dan Do While Loop
+        System.out.println("\nHASIL - BRUTE FORCE WHILE LOOP");
+        for (int i = 0; i < iJml; i++) {
+            System.out.println("Hasil penghitungan faktorial menggunakan Brute Force While Loop adalah " + fk[i].faktorialBFWhile(fk[i].nilai));
+        }
+        System.out.println("HASIL - BRUTE FORCE DO WHILE LOOP");
+        for (int i = 0; i < iJml; i++) {
+            System.out.println("Hasil penghitungan faktorial menggunakan Brute Force Do While Loop adalah " + fk[i].faktorialBFDoWhile(fk[i].nilai));
+        }
     }
 
 }
