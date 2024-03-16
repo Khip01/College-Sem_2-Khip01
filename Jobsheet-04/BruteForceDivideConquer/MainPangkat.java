@@ -11,14 +11,23 @@ public class MainPangkat {
         int elemen = sc.nextInt();
 
         Pangkat[] png = new Pangkat[elemen];
+        // for (int i = 0; i < elemen; i++) {
+        //     png[i] = new Pangkat();
+        //     System.out.println("Masukkan nilai yang hendak dipangkatkan: ");
+        //     int nilai = sc.nextInt();
+        //     png[i].nilai = nilai;
+        //     System.out.println("Masukkan nilai pangkat: ");
+        //     int pangkat = sc.nextInt();
+        //     png[i].pangkat = pangkat;
+        // }
+
+        // Modifikasi Pengisian Atribut menggunakan Konstruktor
         for (int i = 0; i < elemen; i++) {
-            png[i] = new Pangkat();
             System.out.println("Masukkan nilai yang hendak dipangkatkan: ");
             int nilai = sc.nextInt();
-            png[i].nilai = nilai;
             System.out.println("Masukkan nilai pangkat: ");
             int pangkat = sc.nextInt();
-            png[i].pangkat = pangkat;
+            png[i] = new Pangkat(nilai, pangkat);
         }
 
         System.out.println("HASIL PANGKAT - BRUTE FORCE");
