@@ -16,7 +16,6 @@ public class Sum {
         return total;
     }
 
-    ///////////////  yo iku,        0   5 - 1 = 4 
     double totalDC(double arr[], int l, int r) {
         if (l == r) {
             return arr[l];
