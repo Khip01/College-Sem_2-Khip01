@@ -39,7 +39,7 @@ public class DaftarMahasiswaBerprestasi {
 
     void selectionSort() {
         for (int i = 0; i < listMhs.length - 1; i++) {
-            int idxMin = i; // Update the starting index of idxMin to i
+            int idxMin = i;
             for (int j = i+1; j < listMhs.length; j++) {
                 // System.out.printf("Banding Antara %.2f < %.2f\n", listMhs[j].ipk, listMhs[idxMin].ipk);
                 if (listMhs[j].ipk < listMhs[idxMin].ipk) {
