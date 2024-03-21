@@ -52,6 +52,18 @@ public class DaftarMahasiswaBerprestasi {
         }
     }
 
+    void insertionSort(){
+        for (int i = 1; i < listMhs.length; i++) {
+            Mahasiswa temp = listMhs[i];
+            int j = i;
+            while (j > 0 && listMhs[j - 1].ipk > temp.ipk) {
+                listMhs[j] = listMhs[j - 1];
+                j--;
+            }
+            listMhs[j] = temp;
+        }
+    }
+
     public static void main(String[] args) {
         DaftarMahasiswaBerprestasi list = new DaftarMahasiswaBerprestasi();
 
@@ -163,9 +175,16 @@ public class DaftarMahasiswaBerprestasi {
         System.out.println("Data mahasiswa sebelum sorting");
         list.tampil();
 
-        System.out.println("Data mahasiswa setelah sorting asc berdasarkan ipk");
+        // System.out.println("Data mahasiswa setelah sorting asc berdasarkan ipk");
         // list.bubbleSort();
-        list.selectionSort();
+        // list.tampil();
+
+        // System.out.println("Data mahasiswa setelah sorting asc berdasarkan ipk");
+        // list.selectionSort();
+        // list.tampil();
+
+        System.out.println("Data mahasiswa setelah sorting asc berdasarkan ipk");
+        list.insertionSort();
         list.tampil();
     }
 }
