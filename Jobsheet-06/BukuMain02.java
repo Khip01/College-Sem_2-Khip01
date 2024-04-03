@@ -41,6 +41,17 @@ public class BukuMain02 {
         System.out.println("Menggunakan Sequential Search");
         int posisi = data.FindSeqSearch(cari);
         data.Tampilposisi(cari, posisi);
+
+        System.out.println("------------------------------------------------------------");
+        System.out.println("------------------------------------------------------------");
+        System.out.println("Modified Code - Sequential Search by Me");
+        System.out.println("Searched Kode Buku: "+cari);
+        try {
+            Buku02 dataBuku = data.FindBuku(cari);
+            dataBuku.tampilDataBuku();
+        } catch (Exception e) {
+            System.out.printf("Data %d tidak ditemukan\n", cari);
+        }
     }
 
 

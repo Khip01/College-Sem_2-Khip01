@@ -36,4 +36,13 @@ public class PencarianBuku02 {
             
         }
     }
+
+    Buku02 FindBuku(int kodeBuku){
+        int iterationIndex = 0;
+        do {
+            if (iterationIndex == listBk.length) return null;
+            if (listBk[iterationIndex].kodeBuku == kodeBuku) return listBk[iterationIndex];
+            iterationIndex++;
+        } while (true);
+    }
 }
