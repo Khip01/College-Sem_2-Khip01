@@ -56,11 +56,11 @@ public class BukuMain02 {
         }
 
 
-        // System.out.println("============================================================");
-        // System.out.println("menggunakan binary Search");
-        // posisi = data.FindBinarySearch(cari, 0, jumBuku - 1);
-        // data.Tampilposisi(cari, posisi);
-        // data.Tam(cari, posisi);
+        System.out.println("============================================================");
+        System.out.println("menggunakan binary Search");
+        posisi = data.FindBinarySearch(cari, 0, jumBuku - 1);
+        data.Tampilposisi(cari, posisi);
+        data.TampilData(cari, posisi);
     }
 
 
