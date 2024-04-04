@@ -1,8 +1,9 @@
 class Buku02 {
-    int kodeBuku, tahunTerbit, stock;
+    String kodeBuku;
+    int tahunTerbit, stock;
     String judulBuku, pengarang;
 
-    Buku02(int kodeBuku, String judulBuku, int tahunTerbit, String pengarang, int stock) {
+    Buku02(String kodeBuku, String judulBuku, int tahunTerbit, String pengarang, int stock) {
         this.kodeBuku = kodeBuku;
         this.judulBuku = judulBuku;
         this.tahunTerbit = tahunTerbit;
