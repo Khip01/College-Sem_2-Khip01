@@ -17,8 +17,8 @@ public class Utama02 {
             System.out.println("1. Tambah barang");
             System.out.println("2. Ambil barang");
             System.out.println("3. Tampilkan tumpukan barang");
-            System.out.println("4. Tampilkan barang teratas");
-            System.out.println("5. Keluar");
+            // System.out.println("4. Tampilkan barang teratas");
+            System.out.println("4. Keluar");
             System.out.print("Pilih operasi: ");
             int pilihan = scanner.nextInt();
             scanner.nextLine();
