@@ -50,9 +50,9 @@ public class Gudang02 {
 
     public Barang02 lihatBarangTeratas() {
         if (!cekKosong()) {
-            Barang02 barangteratas = tumpukan[top];
-            System.out.println("Barang teratas: "+ barangteratas.nama);
-            return barangteratas;
+            Barang02 barangTeratas = tumpukan[top];
+            System.out.println("Barang teratas: "+ barangTeratas.nama);
+            return barangTeratas;
         } else {
             System.out.println("Tumpukan barang kosong");
             return null;
