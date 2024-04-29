@@ -43,8 +43,8 @@ public class NasabahMain {
                     Nasabah data = antri.Dequeue();
                     if (!"".equals(data.norek) && !"".equals(data.nama) && !"".equals(data.alamat) && data.umur != 0 && data.saldo != 0) {
                         System.out.println("Antrian yang keluar: " + data.norek + " " + data.nama + " " + data.alamat + " " + data.umur + " " + data.saldo);
-                        break;
                     }
+                    break;
                 case 3:
                     antri.peek();
                     break;
