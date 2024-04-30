@@ -39,7 +39,7 @@ public class Nasabah {
                 if (rear == max - 1) {
                     rear = 0;
                 } else {
-                    rear++;
+                    rear = (rear + 1) % max;
                 }
             }
             data[rear] = dt;
@@ -60,7 +60,7 @@ public class Nasabah {
                 if (front == max - 1) {
                     front = 0;
                 } else {
-                    front++;
+                    front = (front + 1) % max;
                 }
             }
         }

@@ -68,7 +68,7 @@ public class Queue {
             if (IsEmpty()) {
                 front = rear = 0;
             } else {
-                rear++;
+                rear = (rear + 1) % max;
             }
             data[rear] = dt;
             size++;
@@ -90,7 +90,7 @@ public class Queue {
                 if (front == max - 1) {
                     front = 0;
                 } else {
-                    front++;
+                    front = (front + 1) % max;
                 }
             }
         }
