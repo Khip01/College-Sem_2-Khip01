@@ -15,19 +15,36 @@ public class BinaryTree02 {
         } else {
             Node02 current = root;
             while (true) {
-                if (data > current.data) {
-                    if (current.right == null) {
-                        current.right = new Node02(data);
-                        break;
+                // if (data > current.data) {
+                //     if (current.right == null) {
+                //         current.right = new Node02(data);
+                //         break;
+                //     } else {
+                //         current = current.right;
+                //     }
+                // } else if (data < current.data) {
+                //     if (current.left == null) {
+                //         current.left = new Node02(data);
+                //         break;
+                //     } else {
+                //         current = current.left;
+                //     }
+                // } else { // data is already exist
+                //     break;
+                // }
+                if (data < current.data) {
+                    if (current.left != null) {
+                        current = current.left;
                     } else {
-                        current = current.right;
-                    }
-                } else if (data < current.data) {
-                    if (current.left == null) {
                         current.left = new Node02(data);
                         break;
+                    }
+                } else if (data > current.data) {
+                    if (current.right != null) {
+                        current = current.right;
                     } else {
-                        current = current.left;
+                        current.right = new Node02(data);
+                        break;
                     }
                 } else { // data is already exist
                     break;
