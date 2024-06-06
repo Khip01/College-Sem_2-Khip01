@@ -12,7 +12,7 @@ public class GraphMatriks02 {
     }
 
     public void removeEdge(int asal, int tujuan){
-        matriks[asal][tujuan] = -1;
+        matriks[asal][tujuan] = 0;
     }
 
     public void printGraph(){
