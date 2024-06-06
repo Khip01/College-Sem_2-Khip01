@@ -45,8 +45,9 @@ public class Graph02 {
 
     public void removeEdgeDirected(int asal, int tujuan) throws Exception {
         for (int i = 0; i < vertex; i++) {
-            if (i == tujuan) {
+            if (i == asal) {
                 list[asal].remove(tujuan);
+                list[asal].size--;
             }
         }
     }
@@ -62,7 +63,7 @@ public class Graph02 {
         for (int i = 0; i < vertex; i++) {
             if (list[i].size() > 0) {
                 System.out.println("Gedung " + (char) ('A' + i) + " terhubung dengan ");
-                for (int j = 0; j < list.length; j++) {
+                for (int j = 0; j < list[i].size(); j++) {
                     System.out.print((char) ('A' + list[i].get(j)) + " (" + list[i].getJarak(j) + " m), ");
                 }
                 System.out.println("");
