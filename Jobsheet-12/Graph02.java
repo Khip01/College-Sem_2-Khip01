@@ -71,4 +71,20 @@ public class Graph02 {
         }
         System.out.println("");
     }
+
+    public boolean checkIsAdjacency(int asal, int tujuan) throws Exception {
+        // Mengecek asal -> tujuan
+        for (int j = 0; j < list[asal].size(); j++) {
+            if (list[asal].get(j) == tujuan) {
+                return true;
+            }
+        }
+        // Mengecek tujuan -> asal
+        for (int j = 0; j < list[tujuan].size(); j++) {
+            if (list[tujuan].get(j) == asal) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
