@@ -26,4 +26,16 @@ public class GraphMatriks02 {
             System.out.println();
         }
     }
+
+    public void countDegreeInOut(int index){
+        int inDegree = 0, outDegree = 0;
+        // Search InDegree
+        for (int i = 0; i < matriks.length; i++) if (matriks[i][index] > 0) inDegree++; 
+        // Search OutDegree
+        for (int val : matriks[index]) if (val > 0) outDegree++;
+        // Output
+        System.out.println("InDegree dari Gedung " + (char) ('A' + index) + ": " + inDegree);
+        System.out.println("OutDegree dari Gedung " + (char) ('A' + index) + ": " + outDegree);
+        System.out.println("Degree dari Gedung " + (char) ('A' + index) + ": " + (inDegree + outDegree));
+    }
 }

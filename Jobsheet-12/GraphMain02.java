@@ -43,6 +43,10 @@ public class GraphMain02 {
         System.out.println("Hasil setelah penghapusan edge");
         gdg.removeEdge(2, 1);
         gdg.printGraph();
+
+        System.out.print("\nMasukkan INDEX VERTEX yang ingin dicari InDegree dan OutDegreenya: ");
+        int index = input.nextInt();
+        gdg.countDegreeInOut(index);
     }
 
 }
